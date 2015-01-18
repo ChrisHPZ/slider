@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neoslider</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="header">
+		<div class="container_24">
+			<h1 class="app-title">CRD Designs Neo-Slider</h1> <%= link_to 'Big Ol\' New Slider Image Button', new_sliderimage_path %>
+		</div><!-- end div container_24 -->
+	</div><!-- end div header -->
+	
+	<div class="container_24">
+		<div class="grid_24">
+			<%= yield %>
+		</div><!-- end div grid_24 -->
+	</div><!-- end div container_24 -->
+</body>
+</html>

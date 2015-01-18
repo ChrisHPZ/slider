@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sliderimage.title %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @sliderimage.caption %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @sliderimage.url %>
+</p>
+
+<p>
+  <strong>Picture:</strong><br />
+  <%= image_tag(@sliderimage.picture_url, :width => 600) if @sliderimage.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_sliderimage_path(@sliderimage) %> |
+<%= link_to 'Back', sliderimages_path %>

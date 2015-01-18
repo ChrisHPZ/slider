@@ -1,0 +1,15 @@
+<div class="container_24">
+	<div class="flex-container">
+		<div class="flexslider">
+			<ul class="slides">
+				<% @sliderimages.each do |s| %>
+					<li>
+						<%= link_to(image_tag(s.picture_url, :width => 600, :height => 294), '#') %>
+						<div class="title"><h3><%= s.title %></h3></div>
+						<div class="caption"><div><%= s.caption %></div></div><!-- end div caption -->						
+					</li>
+				<% end %>
+			</ul><!-- end ul slides -->
+		</div><!-- end div flexslider -->
+	</div><!-- end div flex-container -->
+</div><!-- end div container_24 -->
